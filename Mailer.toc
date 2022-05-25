@@ -1,0 +1,7 @@
+## Interface: 90200
+## Title: Astral Mailer
+## Notes: Sends items to specified target with rarity option
+## Author: Soyung
+## Version: v1.0
+
+Mailer.lua
