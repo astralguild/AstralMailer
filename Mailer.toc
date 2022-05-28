@@ -1,5 +1,5 @@
 ## Interface: 90200
-## Title: Astral Mailer
+## Title: |cffa335eeAstral|r |cffffffffMailer|r
 ## Notes: Sends items to specified target with rarity option
 ## Author: Soyung
 ## Version: v1.0
