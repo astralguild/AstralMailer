@@ -1,7 +1,9 @@
 ## Interface: 90205
 ## Title: |cffa335eeAstral|r |cffffffffMailer|r
 ## Notes: Sends items to specified target with rarity option
-## Author: Soyung
+## Author: Soyung, Khazak
 ## Version: 1.0
+## X-Curse-Project-ID: 634319
+## X-Wago-ID: xZKxgp6k
 
 Mailer.lua
