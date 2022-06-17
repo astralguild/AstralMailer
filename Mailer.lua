@@ -32,6 +32,13 @@ local function LaunchMailer(msg)
 		table.insert(mailerArgs, str)
     end
 
+	if (mailerArgs[1] == "help") then
+		print("To send something, type /mailer recipientName itemId itemRarity")
+		print("Example: /mailer Leeroy 171267 1")
+		print("Common=1 Uncommon=2 Rare=3 Epic=4 Legendary=5")
+		return
+	end
+
 	debugPrint("Mailing target is " .. mailerArgs[1]);
 	debugPrint("ItemID target is " .. mailerArgs[2]);
 	debugPrint("Rarity target is " .. mailerArgs[3]);
@@ -90,6 +97,6 @@ function debugPrint(msg)
 
 end
 
-SLASH_MAILER1 = "/mailer"
+SLASH_MAILER1, SLASH_MAILER2 = "/mailer", "/am"
 
 SlashCmdList["MAILER"] = LaunchMailer
