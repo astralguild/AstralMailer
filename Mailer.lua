@@ -54,9 +54,10 @@ function GetItemsToSend()
 	invToSend={}
 	
 	for i=0,4 do 
-		for j=1,GetContainerNumSlots(i) do 
-			local _,_,locked,quality,_,_,_,_,_,iid=GetContainerItemInfo(i,j);
-			if ((locked == false) and (quality == tonumber(mailerArgs[3])) and (iid == tonumber(mailerArgs[2]))) then
+		for j=1,C_Container.GetContainerNumSlots(i) do 
+			local item = C_Container.GetContainerItemInfo(i,j);
+			if (item ~= nil and item.isLocked == false and item.quality == tonumber(mailerArgs[3]) and item.itemID == tonumber(mailerArgs[2])) then
+				debugPrint({i,j})
 				table.insert(invToSend, {i,j})
 			end
 		end
@@ -70,7 +71,7 @@ function SendItems()
 		local count=0;
 		for k, v in pairs(invToSend) do
 			count = count + 1;
-			PickupContainerItem(v[1],v[2]);
+			C_Container.PickupContainerItem(v[1],v[2]);
 			ClickSendMailItemButton(count);
 			invToSend[k] = nil
 			if (count == 12) then

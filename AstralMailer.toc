@@ -1,7 +1,7 @@
-## Interface: 90205
+## Interface: 100005
 ## Title: |cffa335eeAstral|r |cffffffffMailer|r
 ## Notes: Sends items to specified target with rarity option
 ## Author: Soyung
-## Version: 1.0
+## Version: 1.1
 
 Mailer.lua
