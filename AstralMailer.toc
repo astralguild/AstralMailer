@@ -1,5 +1,5 @@
-## Interface: 100005
-## Title: |cffa335eeAstral|r |cffffffffMailer|r
+## Interface: 100007
+## Title: Astral |cffffffffMailer|r
 ## Notes: Sends items to specified target with rarity option
 ## Author: Soyung, Khazak
 ## Version: 1.2
