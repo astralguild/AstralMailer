@@ -32,7 +32,7 @@ local function LaunchMailer(msg)
 		table.insert(mailerArgs, str)
     end
 
-	if (mailerArgs[1] == "help") then
+	if (#mailerArgs == 0 or mailerArgs[1] == "help") then
 		print("To send something, type /mailer recipientName itemId itemRarity")
 		print("Example: /mailer Leeroy 171267 1")
 		print("Common=1 Uncommon=2 Rare=3 Epic=4 Legendary=5")
