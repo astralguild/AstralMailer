@@ -1,8 +1,8 @@
-## Interface: 110100
+## Interface: 110105
 ## Title: Astral |cffffffffMailer|r
 ## Notes: Sends items to specified target with rarity option
 ## Author: Soyung, Khazak
-## Version: 1.28
+## Version: 1.30
 ## X-Curse-Project-ID: 634319
 ## X-Wago-ID: xZKxgp6k
 
